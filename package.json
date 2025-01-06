@@ -1,0 +1,47 @@
+{
+  "name": "@hgcl/accessible-library",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/hgcl"
+  },
+  "version": "0.0.1",
+  "author": "Clara Le",
+  "license": "MIT",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "rollup -c"
+  },
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.26.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.25.9",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
+    "@rollup/plugin-alias": "^5.1.1",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/react": "^19.0.2",
+    "rollup": "^4.30.0",
+    "rollup-plugin-analyzer": "^4.0.0",
+    "typescript": "^5.7.2"
+  },
+  "peerDependencies": {
+    "react": "^16.14.0 || ^17.0.0 || ^18.2.0",
+    "react-dom": "^16.14.0 || ^17.0.0 || ^18.2.0"
+  }
+}
