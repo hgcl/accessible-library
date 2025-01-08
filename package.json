@@ -10,7 +10,9 @@
   "type": "module",
   "scripts": {
     "prebuild": "rm -rf dist",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "sb": "storybook dev -p 6006",
+    "build-sb": "storybook build"
   },
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -30,14 +32,24 @@
     "@babel/plugin-transform-runtime": "^7.25.9",
     "@babel/preset-env": "^7.26.0",
     "@babel/preset-react": "^7.26.3",
+    "@chromatic-com/storybook": "^3.2.3",
     "@rollup/plugin-alias": "^5.1.1",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^28.0.2",
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-terser": "^0.4.4",
+    "@storybook/addon-essentials": "^8.4.7",
+    "@storybook/addon-interactions": "^8.4.7",
+    "@storybook/addon-onboarding": "^8.4.7",
+    "@storybook/blocks": "^8.4.7",
+    "@storybook/react": "^8.4.7",
+    "@storybook/react-vite": "^8.4.7",
+    "@storybook/test": "^8.4.7",
     "@types/react": "^19.0.2",
+    "prop-types": "^15.8.1",
     "rollup": "^4.30.0",
-    "rollup-plugin-analyzer": "^4.0.0"
+    "rollup-plugin-analyzer": "^4.0.0",
+    "storybook": "^8.4.7"
   },
   "peerDependencies": {
     "react": "^16.14.0 || ^17.0.0 || ^18.2.0",
