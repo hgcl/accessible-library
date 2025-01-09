@@ -60,7 +60,7 @@ const config = {
         src: fileURLToPath(new URL("src", import.meta.url)), // enables absolute import paths for src
       },
     }),
-    nodeResolve(), // to resolve external modules
+    nodeResolve({ extensions: [".js", ".jsx"] }), // to resolve external modules
     commonjs({ include: ["node_modules/**"] }), // converts 3rd-party CommonJS modules into ES6 code
     babel({
       babelHelpers: "runtime",
