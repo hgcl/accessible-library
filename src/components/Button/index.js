@@ -1,5 +1,3 @@
-import Button, { VARIANT } from "./Button";
+import Button from "./Button";
 
-export default Object.assign(Button, {
-  VARIANT,
-});
+export default Button;
