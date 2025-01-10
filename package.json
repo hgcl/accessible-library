@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/hgcl"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Clara Le",
   "license": "MIT",
   "description": "",
@@ -46,7 +46,6 @@
     "@storybook/react-vite": "^8.4.7",
     "@storybook/test": "^8.4.7",
     "@types/react": "^19.0.2",
-    "prop-types": "^15.8.1",
     "rollup": "^4.30.0",
     "rollup-plugin-analyzer": "^4.0.0",
     "storybook": "^8.4.7"
