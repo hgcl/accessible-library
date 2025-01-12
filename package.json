@@ -23,13 +23,9 @@
     "@babel/runtime": "^7.26.0"
   },
   "devDependencies": {
-    "@babel/plugin-transform-runtime": "^7.25.9",
-    "@babel/preset-env": "^7.26.0",
     "@babel/preset-react": "^7.26.3",
     "@chromatic-com/storybook": "^3.2.3",
-    "@rollup/plugin-alias": "^5.1.1",
     "@rollup/plugin-babel": "^6.0.4",
-    "@rollup/plugin-commonjs": "^28.0.2",
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^12.1.2",
@@ -42,7 +38,6 @@
     "@storybook/test": "^8.4.7",
     "@types/react": "^19.0.4",
     "rollup": "^4.30.0",
-    "rollup-plugin-analyzer": "^4.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "storybook": "^8.4.7",
     "typescript": "^5.7.3"
