@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Button.module.css";
 
 export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
@@ -14,7 +15,7 @@ export const Button: React.FC<ButtonProps> = ({
 }) => {
   const classNames = `btn btn-${variant} btn-${shape}`;
   return (
-    <button className={classNames} {...props}>
+    <button className={`${classNames} ${styles.Button}`} {...props}>
       {children}
     </button>
   );
