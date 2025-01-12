@@ -1,4 +1,1 @@
-Under construction library, built following a mix of these tutorials
-
-- https://www.misha.wtf/blog/rollup-library-starter
-- https://dev.to/alexeagleson/how-to-create-and-publish-a-react-component-library-2oe
+Under construction library, built following this tutorial https://dev.to/iamrishupatel/how-to-create-a-react-component-library-using-storybook-typescript-scss-and-rollup-4pin
