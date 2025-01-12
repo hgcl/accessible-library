@@ -1,6 +1,10 @@
 /** @type { import('@storybook/react').Preview } */
+// Things to enable in ALL stories
 const preview = {
-  // TODO
+  tags: ["autodocs"],
+  parameters: {
+    layout: "centered",
+  },
 };
 
 export default preview;

@@ -1,23 +1,28 @@
-import React from "react";
-import { Story } from "@storybook/react";
-import { Button, ButtonProps } from "../components/Button";
+import { Button } from "../components/Button";
 
 export default {
-  title: "Button",
+  title: "Component/Button",
   component: Button,
+  // More on argTypes: https://storybook.js.org/docs/api/argtypes
+  argTypes: {
+    variant: { control: "radio" },
+  },
 };
 
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
-
-export const Primary = Template.bind({});
-Primary.args = {
-  children: "Primary",
-  variant: "primary",
+export const Primary = {
+  args: {
+    variant: "primary",
+  },
 };
 
-export const Danger = Template.bind({});
-Danger.args = {
-  children: "Danger",
-  variant: "danger",
-  shape: "rounded",
+export const Secondary = {
+  args: {
+    variant: "secondary",
+  },
+};
+
+export const Tertiary = {
+  args: {
+    variant: "tertiary",
+  },
 };

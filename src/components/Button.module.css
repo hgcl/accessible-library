@@ -1,3 +1,15 @@
 .Button {
+  cursor: pointer;
+}
+
+.primary {
   background-color: red;
+}
+
+.secondary {
+  background-color: green;
+}
+
+.tertiary {
+  background-color: blue;
 }

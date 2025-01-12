@@ -1,22 +1,26 @@
 import React from "react";
 import styles from "./Button.module.css";
 
-export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
-  children: React.ReactNode;
-  variant: "primary" | "danger";
-  shape?: "rounded";
+export interface ButtonProps {
+  /**
+   * TODO description
+   */
+  children: string;
+  /**
+   * TODO description
+   */
+  variant: "primary" | "secondary" | "tertiary";
 }
 
-export const Button: React.FC<ButtonProps> = ({
-  children,
-  variant,
-  shape,
-  ...props
-}) => {
-  const classNames = `btn btn-${variant} btn-${shape}`;
+export const Button = ({ children, variant, ...props }: ButtonProps) => {
   return (
-    <button className={`${classNames} ${styles.Button}`} {...props}>
+    <button className={`${styles[variant]} ${styles.Button}`} {...props}>
       {children}
     </button>
   );
+};
+
+Button.defaultProps = {
+  children: "Click me",
+  variant: "secondary",
 };
