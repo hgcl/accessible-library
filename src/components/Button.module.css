@@ -3,7 +3,7 @@
 }
 
 .primary {
-  background-color: red;
+  background-color: var(--color-primary-on-white);
 }
 
 .secondary {
