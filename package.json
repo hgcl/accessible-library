@@ -46,8 +46,10 @@
     "@storybook/react-vite": "^8.4.7",
     "@storybook/test": "^8.4.7",
     "@types/react": "^19.0.2",
+    "autoprefixer": "^10.4.20",
     "rollup": "^4.30.0",
     "rollup-plugin-analyzer": "^4.0.0",
+    "rollup-plugin-postcss": "^4.0.2",
     "storybook": "^8.4.7"
   },
   "peerDependencies": {

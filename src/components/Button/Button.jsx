@@ -1,19 +1,24 @@
 import React from "react";
 
-const Button = ({ label, hierarchy, ...props }) => {
+/**
+ * Buttons allow users to initiate an action when clicked
+ */
+const Button = ({ children, variant, onClick, ...props }) => {
   return (
     <button
       type="button"
-      className={[`lib-button--${hierarchy}`].join(" ")}
+      // className={`${styles.button} ${styles[variant]}`}
       {...props}
     >
-      {label}
+      {children}
     </button>
   );
 };
 
 Button.defaultProps = {
-  hierarchy: "primary",
+  children: "Click me",
+  // TODO storybook doesn't select secondary button as default...
+  variant: "secondary",
   onClick: undefined,
 };
 
