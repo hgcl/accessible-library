@@ -24,7 +24,7 @@ export default [
         presets: ["@babel/preset-react"],
       }),
       external(),
-      resolve({ extensions: [".js", ".jsx", ".ts", ".tsx"] }),
+      resolve(),
       typescript(),
       terser(),
     ],
