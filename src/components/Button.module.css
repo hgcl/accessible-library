@@ -1,15 +1,59 @@
 .Button {
+  font-size: 1em;
   cursor: pointer;
+  font-weight: bold;
+}
+
+.shared-btn-styles {
+  padding: var(--padding-xs) var(--padding-s);
+  border: var(--border);
+  border-radius: var(--border-radius);
 }
 
 .primary {
-  background-color: var(--color-primary-on-white);
+  composes: shared-btn-styles;
+  background-color: var(--color-bg-accent);
+  color: var(--color-fg-on-accent);
+  border-color: transparent;
+}
+.primary:hover,
+.primary:active,
+.primary:focus {
+  background-color: var(--color-bg-accent-pressed);
 }
 
 .secondary {
-  background-color: green;
+  composes: shared-btn-styles;
+  color: var(--color-fg-normal);
+  background-color: var(--color-bg-normal);
+}
+.secondary:hover,
+.secondary:active,
+.secondary:focus {
+  background-color: var(--color-bg-normal-pressed);
 }
 
 .tertiary {
-  background-color: blue;
+  color: var(--color-fg-normal);
+  text-decoration: underline;
+  /* reset default styles */
+  background: none;
+  border: none;
+}
+.tertiary:hover,
+.tertiary:active,
+.tertiary:focus {
+  color: var(--color-fg-normal-pressed);
+}
+
+.destructive {
+  composes: shared-btn-styles;
+  background-color: var(--color-bg-danger);
+  color: var(--color-fg-on-accent);
+  border-color: transparent;
+}
+.destructive:hover,
+.destructive:active,
+.destructive:focus {
+  background-color: var(--color-bg-danger-pressed);
 }

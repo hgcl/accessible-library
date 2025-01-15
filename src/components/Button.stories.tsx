@@ -1,11 +1,13 @@
 import { Button } from "../components/Button";
 
 export default {
-  title: "Component/Button",
+  title: "Components/Button",
   component: Button,
   // More on argTypes: https://storybook.js.org/docs/api/argtypes
   argTypes: {
     variant: { control: "radio" },
+    type: { control: "radio" },
+    isDisabled: { control: "boolean" },
   },
 };
 
@@ -24,5 +26,11 @@ export const Secondary = {
 export const Tertiary = {
   args: {
     variant: "tertiary",
+  },
+};
+
+export const Destructive = {
+  args: {
+    variant: "destructive",
   },
 };
