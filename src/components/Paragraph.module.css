@@ -1,0 +1,15 @@
+.s {
+  font-size: var(--font-xs);
+}
+
+.m {
+  font-size: var(--font-s);
+}
+
+.l {
+  font-size: var(--font-m);
+}
+
+.bold {
+  font-weight: bold;
+}
