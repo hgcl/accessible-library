@@ -1,0 +1,10 @@
+.Anchor {
+  font-size: inherit;
+  color: var(--color-fg-accent);
+}
+
+.Anchor:hover,
+.Anchor:active,
+.Anchor:focus {
+  color: var(--color-fg-accent-pressed);
+}
