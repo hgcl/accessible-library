@@ -5,8 +5,8 @@
 }
 
 .shared-btn-styles {
-  padding: var(--padding-xs) var(--padding-s);
-  border: var(--border);
+  padding: var(--spacing-s) var(--spacing-m);
+  border: var(--border-line);
   border-radius: var(--border-radius);
 }
 
