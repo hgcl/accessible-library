@@ -5,7 +5,7 @@ export interface ButtonProps {
   /**
    * The short action label written inside the button.
    */
-  children: string;
+  content: string;
   /**
    * 3 button variants — there should be max. one "primary" button on a page.
    */
@@ -21,11 +21,11 @@ export interface ButtonProps {
 }
 
 /**
- * A button is a widget that enables users to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.
+ * A button enables users to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.
  * [See the W3C doc.](https://html.spec.whatwg.org/multipage/form-elements.html#the-button-element)
  */
 export const Button = ({
-  children,
+  content,
   variant,
   type,
   isDisabled,
@@ -39,13 +39,13 @@ export const Button = ({
       aria-disabled={isDisabled}
       {...props}
     >
-      {children}
+      {content}
     </button>
   );
 };
 
 Button.defaultProps = {
-  children: "Click me",
+  content: "Click me",
   variant: "secondary",
   type: "button",
   onClick: undefined,
