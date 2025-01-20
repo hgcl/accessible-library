@@ -1,4 +1,4 @@
-import { Paragraph } from "../components/Paragraph";
+import { Paragraph } from "./Paragraph";
 
 export default {
   title: "Typography/Paragraph",

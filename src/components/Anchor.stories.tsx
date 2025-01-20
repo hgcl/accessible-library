@@ -1,4 +1,4 @@
-import { Anchor } from "../components/Anchor";
+import { Anchor } from "./Anchor";
 
 export default {
   title: "Typography/Anchor",
