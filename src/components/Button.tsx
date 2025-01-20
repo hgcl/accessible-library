@@ -11,7 +11,7 @@ export interface ButtonProps {
    */
   variant: "primary" | "secondary" | "tertiary" | "destructive";
   /**
-   * If the button is used to submit or reset a form, use type 'submit` or `reset` respectively. The type `button` does nothing and needs to be defined with JavaScript.
+   * If the button is used to submit or reset a form, use type `submit` or `reset` respectively. The type `button` does nothing and needs to be defined with JavaScript.
    */
   type: "button" | "submit" | "reset";
   /**

@@ -1,29 +1,33 @@
-import { Paragraph } from "./Paragraph";
+import type { Meta, StoryObj } from "@storybook/react";
+import { Paragraph, ParagraphProps } from "./Paragraph";
 
-export default {
+const meta: Meta<ParagraphProps> = {
   title: "Typography/Paragraph",
   component: Paragraph,
 };
+export default meta;
 
-export const Small = {
+type Story = StoryObj<ParagraphProps>;
+
+export const Small: Story = {
   args: {
     size: "s",
   },
 };
 
-export const Medium = {
+export const Medium: Story = {
   args: {
     size: "m",
   },
 };
 
-export const Large = {
+export const Large: Story = {
   args: {
     size: "l",
   },
 };
 
-export const Bold = {
+export const Bold: Story = {
   args: {
     weight: "bold",
   },

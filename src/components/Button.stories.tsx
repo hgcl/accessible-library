@@ -1,35 +1,33 @@
-import { Button } from "./Button";
+import type { Meta, StoryObj } from "@storybook/react";
+import { Button, ButtonProps } from "./Button";
 
-export default {
+const meta: Meta<ButtonProps> = {
   title: "Components/Button",
   component: Button,
-  // More on argTypes: https://storybook.js.org/docs/api/argtypes
-  argTypes: {
-    variant: { control: "radio" },
-    type: { control: "radio" },
-    isDisabled: { control: "boolean" },
-  },
 };
+export default meta;
 
-export const Primary = {
+type Story = StoryObj<ButtonProps>;
+
+export const Primary: Story = {
   args: {
     variant: "primary",
   },
 };
 
-export const Secondary = {
+export const Secondary: Story = {
   args: {
     variant: "secondary",
   },
 };
 
-export const Tertiary = {
+export const Tertiary: Story = {
   args: {
     variant: "tertiary",
   },
 };
 
-export const Destructive = {
+export const Destructive: Story = {
   args: {
     variant: "destructive",
   },
